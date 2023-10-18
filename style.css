@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
+body{
+    margin:0;
+    padding:0;
+    height: 100vh;
+    display: grid;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #d9a7c7, #fffcdc); 
+}
+.container{
+    position:absolute;
+    display:grid;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    padding:20px;
+    background-color: #fbf9e6;
+    border-radius: 5px;  
+}
+
+.text{
+    font-size:18px;
+    padding: 20px 7px ;
+    font-weight: bold;
+    text-align: center;
+}
+input{  
+    padding: 10px 70px 10px 10px;
+    display: block;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    border:none;
+    width:200px;
+    outline: 1px solid #d9a7c7;
+    caret-color: transparent;
+}
+
+.input-container{
+    position: relative;
+    display:inline-block;
+    justify-self: center;
+}
+
+.copy-icon{
+    position: absolute;
+    right: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    height:18px;
+    width:18px;
+    visibility: visible;
+}
+
+button{
+    padding:9px 7px;
+    margin: 10px 5px 10px 210px;
+    width:80px;
+    border-radius: 5px;
+    background-color: #d9a7c7;
+    border:0px;
+    color:black;
+}
+button:active{
+    background-color: #e8b5d6;
+    cursor: pointer;
+}
+
+#copied-text{
+    display: none;
+    font-size:8px;
+    position: absolute;
+    right: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+::selection {
+    background-color: transparent;
+}
+
+.alert-container{
+    position:absolute;
+    display:grid;
+    top:80%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-color: #fffef3;
+    border-radius: 5px;
+    display:none;
+    font-size: 10px;
+}
+
+.alert-message{
+    padding:10px 10px 0px 10px;
+}
+
+.progress-container{
+    width:100%;
+    position:relative;
+    height:3px;
+    bottom: 0;
+    padding-top: 7px;
+    border-radius: 5px;
+}
+
+.progress-bar{
+    width:0;
+    transition: width 0.7s ease-out;
+    background-color: #d495bd;
+    height:3px;
+}
