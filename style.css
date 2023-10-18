@@ -69,7 +69,7 @@ button:active{
 
 #copied-text{
     display: none;
-    font-size:8px;
+    font-size:10px;
     position: absolute;
     right: 17px;
     top: 50%;
@@ -111,4 +111,31 @@ button:active{
     transition: width 0.7s ease-out;
     background-color: #d495bd;
     height:3px;
+}
+
+@media only screen and (max-width: 480px){
+    .container{
+        padding:12px;
+    }
+    .text{
+        font-size: 16px;
+    }
+    input{
+        width:fit-content;
+        height:24px;
+    }
+    button{
+        width: 72px;
+        margin: 10px 5px 10px 180px;
+    }
+    .alert-container{
+        top:74%;
+    }
+    .copy-icon{
+        width:22px;
+        height:22px;
+    }
+    #copied-text{
+        font-size:10px;
+    }
 }
