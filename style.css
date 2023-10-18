@@ -118,7 +118,7 @@ button:active{
         padding:12px;
     }
     .text{
-        font-size: 16px;
+        font-size: 14px;
     }
     input{
         width:fit-content;
@@ -129,7 +129,7 @@ button:active{
         margin: 10px 5px 10px 180px;
     }
     .alert-container{
-        top:74%;
+        top:78%;
     }
     .copy-icon{
         width:22px;
